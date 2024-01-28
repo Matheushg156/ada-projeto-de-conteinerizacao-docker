@@ -1,8 +1,8 @@
-import { myAnimeList }  from '../hellpers/animeList';
+import animeListRepositorie from '../repositories/animeListRepositorie';
 import { IAnimeList } from '../interfaces/animeListInterface';
 
 const getAnimeList = async (): Promise<IAnimeList[]> => {
-  const animeList: IAnimeList[] = myAnimeList
+  const animeList: IAnimeList[] = await animeListRepositorie.getAnimeList();
   return animeList;
 };
 

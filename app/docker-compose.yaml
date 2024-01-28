@@ -5,8 +5,11 @@ services:
     build: ./back
     ports:
       - "3000:3000"
+    environment:
+      DATABASE_URL: "mysql://user:password@db:3306/appdb"
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     networks:
       - app-network
 
@@ -27,6 +30,10 @@ services:
       MYSQL_DATABASE: appdb
       MYSQL_USER: user
       MYSQL_PASSWORD: password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
     networks:
       - app-network
 
