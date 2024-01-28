@@ -1,7 +1,8 @@
-import accessAnimeApi from '../hellpers/accessAnimeApi';
+import { myAnimeList }  from '../hellpers/animeList';
+import { IAnimeList } from '../interfaces/animeListInterface';
 
-const getAnimeList = async (): Promise<any> => {
-  const animeList = await accessAnimeApi.getAnimesList();
+const getAnimeList = async (): Promise<IAnimeList[]> => {
+  const animeList: IAnimeList[] = myAnimeList
   return animeList;
 };
 
