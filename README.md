@@ -58,7 +58,7 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
    docker compose -f docker-compose.yaml down
    ```
 
-## Execução com Docker Swarm
+## Deploy da Aplicação no Swarm
 
 O Docker Swarm é utilizado para gerenciar um cluster de contêineres Docker e permite a execução de aplicações em múltiplas máquinas. Para executar a aplicação Anime List utilizando o Docker Swarm, siga os passos abaixo:
 
@@ -71,8 +71,6 @@ O Docker Swarm é utilizado para gerenciar um cluster de contêineres Docker e p
    ```
 
    Se você estiver em uma rede com múltiplos endereços IP, pode ser necessário especificar um endereço IP com `--advertise-addr`.
-
-### Deploy da Aplicação no Swarm
 
 2. **Crie as imagens Docker (se ainda não tiver feito):**
    ```sh
