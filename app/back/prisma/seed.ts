@@ -6,15 +6,17 @@ const prisma = new PrismaClient();
 const animeList = myAnimeList;
 
 async function main() {
-  // Cria todas as operações de inserção como uma lista de promessas
-  const createPromises = animeList.map(anime =>
-    prisma.anime.create({
-      data: anime,
-    })
-  );
+  for (const anime of animeList) {
+    const exists = await prisma.anime.findUnique({
+      where: { id: anime.id },
+    });
 
-  // Aguarda a conclusão de todas as operações de inserção
-  await Promise.all(createPromises);
+    if (!exists) {
+      await prisma.anime.create({
+        data: anime,
+      });
+    }
+  }
 }
 
 main()
