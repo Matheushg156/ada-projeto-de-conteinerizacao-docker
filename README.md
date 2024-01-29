@@ -32,7 +32,7 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
    **obs**: Como temos mais de um arquivo docker-compose, é necessário especificar qual arquivo será utilizado, para isso, utilize o comando abaixo:
 
    ```
-   docker-compose -f docker-compose.yaml up
+   docker compose -f docker-compose.yaml up
    ```
 
    Este comando constrói e inicia os containers para o back-end, front-end e banco de dados.
@@ -46,7 +46,7 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
    **obs**: Como temos mais de um arquivo docker-compose, é necessário especificar qual arquivo será utilizado, para isso, utilize o comando abaixo:
 
    ```
-   docker-compose -f docker-compose.yaml down
+   docker compose -f docker-compose.yaml down
    ```
 
 ## Execução com Docker Swarm
