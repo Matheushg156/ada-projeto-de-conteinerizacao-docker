@@ -105,7 +105,7 @@ O Docker Swarm é utilizado para gerenciar um cluster de contêineres Docker e p
 
    Isso mostrará os serviços em execução e o número de réplicas.
 
-7. **Remover a stack e liberar as portas da aplicação**: Para parar os containers, execute:
+7. **Remover a stack e liberar as portas da aplicação**:
 
    ```sh
     docker stack rm [nome_da_sua_stack]
