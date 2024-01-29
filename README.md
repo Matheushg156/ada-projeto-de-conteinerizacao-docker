@@ -2,8 +2,8 @@
 
 ## Autores
 
-João Paulo Pereira Raymundo, 
-Matheus Henrique Gonzaga
+- João Paulo Pereira Raymundo
+- Matheus Henrique Gonzaga
 
 ## Descrição
 
