@@ -8,7 +8,7 @@ const AnimeList = () => {
   useEffect(() => {
     const fetchAnimes = async () => {
       try {
-        const response = await fetch('http://localhost:3001/anime-list');
+        const response = await fetch('http://localhost:3000/anime-list');
         const data = await response.json();
         console.log(data);
         setAnimes(data.animeList);
