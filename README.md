@@ -161,5 +161,3 @@ Para contribuir com o projeto, siga estas etapas:
 
 
 ---
-
-Este README fornece uma visão geral do projeto e pode ser expandido ou modificado conforme as necessidades específicas do seu projeto e as funcionalidades implementadas.
