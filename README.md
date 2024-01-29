@@ -1,5 +1,10 @@
 # My Anime List with Docker
 
+## Autores
+
+João Paulo Pereira Raymundo
+MAtheus Henrique Gonzaga
+
 ## Descrição
 
 Este projeto é uma aplicação web para visualizar uma lista de animes. O back-end é construído com Node.js e TypeScript, utilizando Prisma como ORM para interagir com um banco de dados MySQL. O front-end é desenvolvido com React, exibindo dados consumidos da API do back-end.
@@ -21,17 +26,21 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
 
 ### Instruções
 
-1. **Clonar o Repositório**: Clone o repositório para sua máquina local usando:
+1. **Clonar o Repositório**: Clone o repositório para sua máquina local usando e acesse o diretório /app:
    
-   ```
+   ```sh
    git clone git@github.com:Matheushg156/ada-projeto-de-conteinerizacao-docker.git
+   ```
+
+   ```sh
+   cd /app
    ```
 
 2. **Subir os Containers do Docker**: Navegue até a pasta raiz do projeto e execute:
 
    **obs**: Como temos mais de um arquivo docker-compose, é necessário especificar qual arquivo será utilizado, para isso, utilize o comando abaixo:
 
-   ```
+   ```sh
    docker compose -f docker-compose.yaml up
    ```
 
@@ -45,7 +54,7 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
 
    **obs**: Como temos mais de um arquivo docker-compose, é necessário especificar qual arquivo será utilizado, para isso, utilize o comando abaixo:
 
-   ```
+   ```sh
    docker compose -f docker-compose.yaml down
    ```
 
