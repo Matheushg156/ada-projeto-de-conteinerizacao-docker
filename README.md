@@ -24,7 +24,7 @@ Este projeto é uma aplicação web para visualizar uma lista de animes. O back-
 1. **Clonar o Repositório**: Clone o repositório para sua máquina local usando:
    
    ```
-   git clone [git@github.com:Matheushg156/ada-projeto-de-conteinerizacao-docker.git]
+   git clone git@github.com:Matheushg156/ada-projeto-de-conteinerizacao-docker.git
    ```
 
 2. **Subir os Containers do Docker**: Navegue até a pasta raiz do projeto e execute:
